@@ -9,6 +9,7 @@ let outputTextArea = document.querySelector("textarea.css-output")
 let allPoints = document.querySelectorAll(".point");
 let borderRadiusValue = ["0%", "0%", "0%", "0%"];
 
+// * Change Border Values 
 allPoints.forEach((el) => {
   el.addEventListener("input", () => {
     if (el === topLeftPoint) {
@@ -28,6 +29,14 @@ allPoints.forEach((el) => {
   });
 });
 
+// Copy Feature
+let copyBtn = document.querySelector("button.copy");
+
+copyBtn.addEventListener("click", () => {
+  outputTextArea.select();
+  document.execCommand("copy");
+});
+
 // let topLeftDown;
 // topLeftPoint.addEventListener('mousedown', () => {
 //   topLeftDown = true;
@@ -38,14 +47,6 @@ allPoints.forEach((el) => {
 // previewBox.addEventListener('mousemove', (e) => {
 //   if (topLeftDown && (e.clientY - previewBox.getClientRects()[0].top) >= 0 && e.clientY - previewBox.getClientRects()[0].top < (300 - 20)) {
 //     topLeftPoint.style.top = `${e.clientY - previewBox.getClientRects()[0].top}px`
-//     topLeftPoint.style.left = `${e.clientX - previewBox.getClientRects()[0].left - 10}px`
+//     // topLeftPoint.style.left = `${e.clientX - previewBox.getClientRects()[0].left - 10}px`
 //   }
 // });
-
-
-let copyBtn = document.querySelector("button.copy");
-
-copyBtn.addEventListener("click", () => {
-  outputTextArea.select();
-  document.execCommand("copy");
-});
