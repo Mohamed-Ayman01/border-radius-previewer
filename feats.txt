@@ -2,10 +2,16 @@
 - Make initial design
   - make logo [X]
   - Glassmorphism UI [X]
-  - soft gradient[X]
+  - soft gradient bg [X]
 - add initial features
-  - 4 sliding elements to demonstrate logic
+  - 4 sliding elements to demonstrate logic [X]
   - make and view css changes [X]
-  - copy css values to clipboard
-  - BONUS: User can change all 8 possible values of the border-radius in order to create a complex shape
-    User can change all 8 possible values of the border-radius in order to create a complex shapegit 
+  - copy css values to clipboard [X]
+  - make random values appear and implemented on reload []
+  - randomize btn [X]
+  
+  
+  
+  
+  BONUS: User can change all 8 possible values of the border-radius in order to create a complex shape
+  User can change all 8 possible values of the border-radius in order to create a complex shapegit 

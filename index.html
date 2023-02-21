@@ -11,17 +11,32 @@
     <script src="js/app.js" defer></script>
   </head>
   <body>
+    <div class="copied-msg">
+      copied!
+    </div>
     <div class="container">
       <div class="preview-box">
         <div class="preview-element"></div>
-        <div class="tracks"></div>
-        <input type="number" min="0" max="100" class="point top-left" />
-        <input type="number" min="0" max="100" class="point top-right" />
-        <input type="number" min="0" max="100" class="point bottom-right" />
-        <input type="number" min="0" max="100" class="point bottom-left" />
+        <div class="track vertical-track track-left">
+          <button class="point"></button>
+          <!-- <button class="point"></button> -->
+        </div>
+        <div class="track horizental-track track-top">
+          <button class="point"></button>
+          <!-- <button class="point"></button> -->
+        </div>
+        <div class="track vertical-track track-right">
+          <button class="point"></button>
+          <!-- <button class="point"></button> -->
+        </div>
+        <div class="track horizental-track track-bottom">
+          <button class="point"></button>
+          <!-- <button class="point"></button> -->
+        </div>
       </div>
       <div class="output-box">
         <textarea cols="30" class="css-output" readonly>border-radius: 0% 0% 0% 0%</textarea>
+        <button class="random">Randomize</button>
         <button class="copy">copy</button>
       </div>
     </div>
